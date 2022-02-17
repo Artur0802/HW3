@@ -20,7 +20,6 @@ namespace HW3
             else
             {
                 Console.WriteLine("Имя должно быть больше 2 символов");
-                Console.ReadLine();
             }
 
             if (surname.Length > 2)
@@ -30,7 +29,6 @@ namespace HW3
             else
             {
                 Console.WriteLine("Фамилия должна быть больше 2 символов");
-                Console.ReadLine();
             }
 
             if (age > 0 && age <= 120)
@@ -40,14 +38,12 @@ namespace HW3
             else
             {
                 Console.WriteLine("Возраст должен быть больше 0 и не более 120 лет");
-                Console.ReadLine();
             }
         }
 
         public void PrintPersonInfo()
         {
             Console.WriteLine("Мне {0} лет, меня зовут {1} {2}.", _age, _name, _surname);
-            Console.ReadLine();
         }
     }
 }

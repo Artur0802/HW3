@@ -7,7 +7,7 @@ namespace HW3
         protected int length;
         protected string name;
         protected string color;
-        protected string _sound = "unknown sound";
+        protected string sound = "unknown sound";
 
         public Animal(int length, string name, string color)
         {
@@ -25,7 +25,7 @@ namespace HW3
 
         public void MakeSound()
         {
-            Console.WriteLine(this._sound);
+            Console.WriteLine(sound);
         }
     }
 }
