@@ -17,12 +17,25 @@ namespace HW3
             //Console.WriteLine("'a' = {0}, 'b' = {1}", a, b);
             #endregion
 
-            var fish = new Fish(2, "Рыба", "Серая");
-            var bird = new Bird(2, "Птица", "Разноцветная", 1);
-            var dog = new Dog(2, "Собака", "Черная");
-            fish.MakeSound();
-            bird.MakeSound();
-            dog.MakeSound();
+            #region HW4
+            //var fish = new Fish(2, "Рыба", "Серая");
+            //var bird = new Bird(2, "Птица", "Разноцветная", 1);
+            //var dog = new Dog(2, "Собака", "Черная");
+            //fish.MakeSound();
+            //bird.MakeSound();
+            //dog.MakeSound();
+            #endregion
+
+            int[] intArray = new int[10] { 1, 9, 7, 4, 10, 6, 2, 8, 5, 3 };
+
+            var hW5Methods = new HW5Methods();
+
+            hW5Methods.FindMax(intArray);
+            hW5Methods.SumAllEvenValues(intArray);
+            hW5Methods.FindMinValueOddIndex(intArray);
+
+            string text = "Some text";
+            hW5Methods.PrintStringByChars(text);
 
             Console.ReadLine();
         }
@@ -58,6 +71,7 @@ namespace HW3
         }
         #endregion
 
+        #region HW4 methods
         public void GetSeason(int monthNumber)
         {
             if (monthNumber > 0 && monthNumber <= 12)
@@ -84,6 +98,8 @@ namespace HW3
                 Console.WriteLine("Введите корректный номер месяца (1-12)");
             }
         }
+        #endregion
+        
     }
 
 
